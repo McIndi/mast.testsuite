@@ -5,7 +5,7 @@ def read(fname):
     return open(os.path.join(os.path.dirname(__file__), fname)).read()
 
 setup(
-    name = "mast.tests",
+    name = "mast.testsuite",
     version = "2.1.0",
     author = "Clifford Bressette",
     author_email = "cliffordbressette@mcindi.com",
