@@ -57,10 +57,10 @@ def main(out_file="stdout",
 
     suite = unittest.TestSuite(suites)
     if out_file is "stdout":
-        unittest.TextTestRunner(stream=sys.stdout, verbosity=2).run(suite)
+        unittest.TextTestRunner(stream=sys.stdout, verbosity=0).run(suite)
     else:
         with open(out_file, "w") as fp_out:
-            unittest.TextTestRunner(stream=fp_out, verbosity=2).run(suite)
+            unittest.TextTestRunner(stream=fp_out, verbosity=0).run(suite)
 
 
 if __name__ == "__main__":

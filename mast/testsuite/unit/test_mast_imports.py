@@ -1,7 +1,15 @@
+from time import time
 import unittest
 
 
 class TestMASTImports(unittest.TestCase):
+    def setUp(self):
+        self.start_time = time()
+
+    def tearDown(self):
+        self.time_taken = time() - self.start_time
+        print "%.3f: %s" % (self.time_taken, self.id())
+
     def test_import_mast_cli(self):
         import mast.cli as cli
         self.assertTrue(hasattr(cli, "__version__"))
