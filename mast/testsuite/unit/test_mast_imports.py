@@ -3,6 +3,11 @@ import unittest
 
 
 class TestMASTImports(unittest.TestCase):
+    """
+    Basic smoke tests. Basically checks for syntax errors and such
+    by ensuring that each module can be imported. Also checks that each
+    version has knowlege of its `__version__` which is a recent requirement.
+    """
     def setUp(self):
         self.start_time = time()
 

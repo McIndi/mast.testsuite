@@ -2,6 +2,7 @@ import os
 import sys
 import unittest
 from mast.cli import Cli
+from mast.logging import make_logger
 
 __version__ = "{}-0".format(os.environ["MAST_VERSION"])
 here = os.path.dirname(__file__)
@@ -71,4 +72,4 @@ if __name__ == "__main__":
         pass
     except:
         make_logger("error").exception("An unhandled exception occurred during execution")
-
+        raise
