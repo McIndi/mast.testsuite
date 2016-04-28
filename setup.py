@@ -13,6 +13,7 @@ setup(
     license = "GPLv3",
     keywords = "unit test integration regression suite",
     url = "http://github.com/mcindi/mast.testsuite",
+    install_requires=["mock"],
     namespace_packages=["mast"],
     packages=['mast',
               'mast.testsuite',
