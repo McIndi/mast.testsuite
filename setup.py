@@ -6,7 +6,7 @@ def read(fname):
 
 setup(
     name = "mast.testsuite",
-    version = "2.1.0",
+    version = "2.2.0",
     author = "Clifford Bressette",
     author_email = "cliffordbressette@mcindi.com",
     description = ("Test suite for MAST for IBM DataPower"),
