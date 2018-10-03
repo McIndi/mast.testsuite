@@ -47,10 +47,6 @@ class TestMASTImports(unittest.TestCase):
         import mast.datapower.datapower as datapower
         self.assertTrue(hasattr(datapower, "__version__"))
 
-    def test_import_mast_datapower_deploy(self):
-        import mast.datapower.deploy as deploy
-        self.assertTrue(hasattr(deploy, "__version__"))
-
     def test_import_mast_datapower_deployment(self):
         import mast.datapower.deployment as deployment
         self.assertTrue(hasattr(deployment, "__version__"))
@@ -130,10 +126,6 @@ class TestMASTImports(unittest.TestCase):
     def test_import_ecdsa(self):
         import ecdsa
         self.assertTrue(ecdsa, "ecdsa")
-
-    def test_import_dulwich(self):
-        from dulwich import porcelain
-        self.assertTrue(porcelain, "clone")
 
 
 if __name__ == "__main__":
